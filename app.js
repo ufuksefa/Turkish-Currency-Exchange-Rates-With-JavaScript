@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", processData)
 
 
 function getData(){
-    fetch("http://hasanadiguzel.com.tr/api/kurgetir")
+    fetch("https://hasanadiguzel.com.tr/api/kurgetir")
     .then(response => response.json())
     .then(data => data.TCMB_AnlikKurBilgileri.forEach(data => {
         createUI(data.CurrencyName,data.ForexBuying,data.ForexSelling,data.CrossRateUSD)
